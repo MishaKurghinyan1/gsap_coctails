@@ -59,7 +59,7 @@ const Hero = () => {
           trigger: "#hero",
           start: "top top",
           end: "bottom top",
-          scrub: true,
+          scrub: 1,
         },
       })
       .to(
@@ -79,7 +79,8 @@ const Hero = () => {
 
     const videoHeight = videoRef.current?.clientHeight || 0;
     const heroHeight = document.getElementById("#hero")?.clientHeight || 0;
-    const cocktailHeight = document.querySelector(".list")?.clientHeight || 0;
+    const cocktailHeight =
+      document.querySelector("#cocktails")?.clientHeight || 0;
     const navHeight =
       document.querySelector(".Misha-Upper-Nav")?.clientHeight || 0;
     const mobileStart =
