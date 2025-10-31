@@ -15,6 +15,7 @@ const Cocktails = () => {
           end: "bottom 80%",
           scrub: 1,
         },
+        //test
       });
 
       const parallaxTimelineRight = gsap.timeline({
