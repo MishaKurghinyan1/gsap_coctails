@@ -65,18 +65,18 @@ const Hero = () => {
       .to(
         ".right-leaf",
         {
-          yPercent: 200,
+          yPercent: 100,
         },
         0
       )
       .to(
         ".left-leaf",
         {
-          yPercent: -200,
+          yPercent: -100,
         },
         0
       );
-    const startValue = isMobile ? "top 50%" : "49% 60%";
+    const startValue = isMobile ? "top 50%" : "center 60%";
     const endValue = isMobile ? "100% top" : "bottom top";
 
     const tl = gsap.timeline({
@@ -104,12 +104,12 @@ const Hero = () => {
         <h1 className="title">MOJITO</h1>
         <img
           src="/images/hero-left-leaf.png"
-          alt="left leaf"
+          alt="left-leaf"
           className="left-leaf"
         />
         <img
           src="/images/hero-right-leaf.png"
-          alt="right leaf"
+          alt="right-leaf"
           className="right-leaf"
         />
 
