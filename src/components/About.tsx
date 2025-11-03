@@ -35,6 +35,11 @@ const About = () => {
             stagger: 0.04,
           }
         );
+      return () => {
+        if (titleSplit) titleSplit.revert();
+        gsap.killTweensOf("#about h2");
+        gsap.killTweensOf(".top-grid div, .bottom-grid div");
+      };
     });
   }, []);
 

@@ -35,7 +35,7 @@ const Art = () => {
       .fromTo(
         ".masked-content",
         {
-          opacity1: 0,
+          opacity: 0,
         },
         {
           opacity: 1,
