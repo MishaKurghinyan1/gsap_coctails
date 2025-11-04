@@ -77,17 +77,17 @@ const Hero = () => {
         0
       );
 
-    const videoHeight = videoRef.current?.clientHeight || 0;
-    const heroHeight = document.getElementById("#hero")?.clientHeight || 0;
-    const cocktailHeight =
-      document.querySelector("#cocktails")?.clientHeight || 0;
-    const navHeight =
-      document.querySelector(".Misha-Upper-Nav")?.clientHeight || 0;
-    const mobileStart =
-      -(heroHeight - cocktailHeight + navHeight / 256 + videoHeight) + "px";
+    // const videoHeight = videoRef.current?.clientHeight || 0;
+    // const heroHeight = document.getElementById("#hero")?.clientHeight || 0;
+    // const cocktailHeight =
+    //   document.querySelector("#cocktails")?.clientHeight || 0;
+    // const navHeight =
+    //   document.querySelector(".Misha-Upper-Nav")?.clientHeight || 0;
+    // const mobileStart =
+    //   -(heroHeight - cocktailHeight + navHeight / 256 + videoHeight) + "px";
 
     const startValue = isMobile ? "top 50%" : "center 60%";
-    const endValue = isMobile ? mobileStart + " top" : "bottom top";
+    const endValue = isMobile ? "120% top" : "bottom top";
 
     const tl = gsap.timeline({
       scrollTrigger: {
